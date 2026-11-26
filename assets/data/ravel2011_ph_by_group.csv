@@ -1,0 +1,5 @@
+group,ph_mean,ph_sd,source
+White,4.2,0.3,"Ravel et al. 2011 PNAS 108 Suppl 1:4680-4687, abstract"
+Asian,4.4,0.59,"Ravel et al. 2011 PNAS 108 Suppl 1:4680-4687, abstract"
+Black,4.7,1.04,"Ravel et al. 2011 PNAS 108 Suppl 1:4680-4687, abstract"
+Hispanic,5.0,0.59,"Ravel et al. 2011 PNAS 108 Suppl 1:4680-4687, abstract"

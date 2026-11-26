@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaginal Microbiome | Juan Lab</title>
+  <meta name="description" content="Vaginal microbiome data, results and data upload, Juan Lab, Karolinska Institutet.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">Vaginal Microbiome</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#upload">Upload</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="eyebrow">Juan Lab · Karolinska Institutet</p>
+      <h1>The vaginal microbiome</h1>
+      <p class="lead">
+        Most vaginal bacterial communities in reproductive-age women are dominated by
+        <em>Lactobacillus</em>, which acidifies the environment through lactic acid production.
+        This site collects the data we work with, summarises results, and accepts data submissions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DATA ============ -->
+  <section id="data" class="section">
+    <div class="wrap">
+      <h2>Data</h2>
+      <p>
+        The reference dataset shown here is from
+        <a href="https://doi.org/10.1073/pnas.1002611107">Ravel et al. 2011, <cite>PNAS</cite> 108 Suppl 1:4680–4687</a>:
+        vaginal swabs from <strong>396 asymptomatic North American women</strong> in four self-reported
+        ethnic groups, profiled by pyrosequencing of barcoded 16S rRNA genes.
+      </p>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Study design</h3>
+          <dl class="facts">
+            <dt>Participants</dt><dd>396 asymptomatic women of reproductive age</dd>
+            <dt>Groups</dt><dd>White, Black, Hispanic, Asian</dd>
+            <dt>Assay</dt><dd>16S rRNA gene amplicon pyrosequencing</dd>
+            <dt>Clinical measures</dt><dd>Vaginal pH, Nugent score</dd>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h3>Community state types (CSTs)</h3>
+          <table>
+            <thead><tr><th scope="col">CST</th><th scope="col">Dominant taxa</th></tr></thead>
+            <tbody>
+              <tr><td>I</td><td><em>L. crispatus</em></td></tr>
+              <tr><td>II</td><td><em>L. gasseri</em></td></tr>
+              <tr><td>III</td><td><em>L. iners</em></td></tr>
+              <tr><td>IV</td><td>Low <em>Lactobacillus</em>; diverse strict anaerobes</td></tr>
+              <tr><td>V</td><td><em>L. jensenii</em></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+
+      <h3>Vaginal pH by group</h3>
+      <div class="table-scroll">
+        <table>
+          <caption>Mean ± s.d. as reported in the abstract of Ravel et al. 2011.</caption>
+          <thead>
+            <tr><th scope="col">Group</th><th scope="col" class="num">Mean pH</th><th scope="col" class="num">s.d.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>White</td><td class="num">4.2</td><td class="num">0.30</td></tr>
+            <tr><td>Asian</td><td class="num">4.4</td><td class="num">0.59</td></tr>
+            <tr><td>Black</td><td class="num">4.7</td><td class="num">1.04</td></tr>
+            <tr><td>Hispanic</td><td class="num">5.0</td><td class="num">0.59</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><a class="button" href="assets/data/ravel2011_ph_by_group.csv" download>Download CSV</a></p>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section id="results" class="section alt">
+    <div class="wrap">
+      <h2>Results</h2>
+
+      <figure class="figure">
+        <img src="assets/img/ph_by_group.svg" alt="Dot plot of mean vaginal pH with standard deviation for four groups: White 4.2, Asian 4.4, Black 4.7, Hispanic 5.0, with a dashed reference line at pH 4.5." width="900" height="560">
+        <figcaption>
+          <strong>Figure 1.</strong> Vaginal pH (mean ± s.d.) by self-reported ethnic group, Ravel et al. 2011 (n = 396).
+          Dashed line marks pH 4.5, the threshold used in Amsel criteria for bacterial vaginosis.
+          <a href="assets/img/ph_by_group.png">PNG (300 dpi)</a>
+        </figcaption>
+      </figure>
+
+      <div class="grid-3">
+        <article class="card finding">
+          <h3>Five community types</h3>
+          <p>Communities clustered into five groups: four dominated by a single <em>Lactobacillus</em> species, and one (CST IV) with fewer lactic acid bacteria and more strict anaerobes.</p>
+        </article>
+        <article class="card finding">
+          <h3>Composition differs by group</h3>
+          <p>The proportion of each community type differed among the four ethnic groups (χ²<sub>10</sub> = 36.8, <i>P</i> &lt; 0.0001).</p>
+        </article>
+        <article class="card finding">
+          <h3>pH differs by group</h3>
+          <p>Mean pH was higher in Hispanic (5.0) and Black (4.7) women than in Asian (4.4) and White (4.2) women; the spread was widest in Black women (s.d. 1.04).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPLOAD ============ -->
+  <section id="upload" class="section">
+    <div class="wrap">
+      <h2>Upload</h2>
+      <p>
+        Preview a taxa abundance table or sample metadata file (CSV or TSV). The file is read
+        <strong>in your browser only</strong>; nothing is sent to a server.
+      </p>
+
+      <div class="notice">
+        <strong>Do not upload personal data.</strong> Files with personal identifiers must be
+        pseudonymised and handled under an approved ethics permit and GDPR.
+        To share data with the lab, contact the Juan Lab directly.
+      </div>
+
+      <form class="upload-form" id="upload-form">
+        <label class="dropzone" for="file-input">
+          <span class="dropzone-title">Choose a file</span>
+          <span class="dropzone-hint">.csv, .tsv or .txt, first column = sample or taxon ID</span>
+          <input type="file" id="file-input" name="file" accept=".csv,.tsv,.txt,text/csv,text/tab-separated-values">
+        </label>
+        <button type="reset" class="button secondary" id="clear-btn">Clear</button>
+      </form>
+
+      <p id="file-info" class="file-info" aria-live="polite"></p>
+      <div id="preview" class="table-scroll"></div>
+
+      <noscript>
+        <p class="notice">The file preview needs JavaScript enabled.</p>
+      </noscript>
+
+      <details class="format">
+        <summary>Expected format</summary>
+<pre>sample_id,L_crispatus,L_iners,L_gasseri,L_jensenii,G_vaginalis
+S001,0.91,0.05,0.00,0.01,0.00
+S002,0.02,0.10,0.00,0.00,0.41</pre>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Juan Lab · Karolinska Institutet</p>
+    <p class="small">Data: Ravel J et al. Vaginal microbiome of reproductive-age women. <cite>PNAS</cite> 2011;108 Suppl 1:4680–4687. doi:10.1073/pnas.1002611107</p>
+  </div>
+</footer>
+
+<script src="upload.js"></script>
+</body>
+</html>
