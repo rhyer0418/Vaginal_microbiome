@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statistics | VagMicroDb</title>
+  <meta name="description" content="VagMicroDb: a database of vaginal microbiome research (working name).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">VagMicroDb <span class="badge">working name</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="browse.html" >Browse</a></li>
+        <li><a href="analysis.html" >Analysis</a></li>
+        <li><a href="statistics.html" aria-current="page">Statistics</a></li>
+        <li><a href="download.html" >Download</a></li>
+        <li><a href="help.html" >Help</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="section page-head">
+  <div class="wrap">
+    <h1>Statistics</h1>
+    <p class="lead">Summaries across projects. Currently shows the example project only.</p>
+  </div>
+</section>
+
+<section id="by-project" class="section"><div class="wrap">
+  <h2>Samples by project</h2>
+  <p class="muted">[Placeholder: bar chart of sample counts per project, to be generated when data is loaded.]</p>
+</div></section>
+
+<section id="ph-example" class="section alt"><div class="wrap">
+  <h2>Example: vaginal pH by ethnic group</h2>
+  <figure class="figure">
+    <img src="assets/img/ph_by_group.svg" alt="Dot plot of mean vaginal pH with standard deviation for four groups: White 4.2, Asian 4.4, Black 4.7, Hispanic 5.0, with a dashed reference line at pH 4.5." width="900" height="560">
+    <figcaption>
+      <strong>Figure 1.</strong> Vaginal pH (mean ± s.d.) by self-reported ethnic group, Ravel et al. 2011 (n = 396, abstract values).
+      Dashed line marks pH 4.5, the Amsel criterion for bacterial vaginosis.
+      <a href="assets/img/ph_by_group.png">PNG (300 dpi)</a>
+    </figcaption>
+  </figure>
+  <div class="table-scroll">
+    <table>
+      <caption>Mean ± s.d. as reported in the abstract of Ravel et al. 2011.</caption>
+      <thead><tr><th scope="col">Group</th><th scope="col" class="num">Mean pH</th><th scope="col" class="num">s.d.</th></tr></thead>
+      <tbody>
+        <tr><td>White</td><td class="num">4.2</td><td class="num">0.30</td></tr>
+        <tr><td>Asian</td><td class="num">4.4</td><td class="num">0.59</td></tr>
+        <tr><td>Black</td><td class="num">4.7</td><td class="num">1.04</td></tr>
+        <tr><td>Hispanic</td><td class="num">5.0</td><td class="num">0.59</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
+
+<section id="cst" class="section"><div class="wrap">
+  <h2>Community state types in the example</h2>
+  <p>Five community types were found. Four are dominated by one <em>Lactobacillus</em> species; CST IV has few lactic acid bacteria and more strict anaerobes.</p>
+  <p class="muted">Composition differed by ethnic group (χ²<sub>10</sub> = 36.8, <i>P</i> &lt; 0.0001).</p>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VagMicroDb (working name) · Vaginal microbiome research database · Juan Lab, Karolinska Institutet</p>
+    <p class="small">Example project: Ravel J et al. Vaginal microbiome of reproductive-age women. <cite>PNAS</cite> 2011;108 Suppl 1:4680–4687. doi:10.1073/pnas.1002611107</p>
+  </div>
+</footer>
+<script src="upload.js"></script>
+</body>
+</html>

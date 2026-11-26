@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse | VagMicroDb</title>
+  <meta name="description" content="VagMicroDb: a database of vaginal microbiome research (working name).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">VagMicroDb <span class="badge">working name</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="browse.html" aria-current="page">Browse</a></li>
+        <li><a href="analysis.html" >Analysis</a></li>
+        <li><a href="statistics.html" >Statistics</a></li>
+        <li><a href="download.html" >Download</a></li>
+        <li><a href="help.html" >Help</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="section page-head">
+  <div class="wrap">
+    <h1>Browse</h1>
+    <p class="lead">Explore the database by entity. Each list fills in as data is loaded.</p>
+    <nav class="subnav" aria-label="Browse sections">
+      <a href="#sample-sites">Sample sites</a>
+      <a href="#taxa">Taxa</a>
+      <a href="#phenotypes">Phenotypes</a>
+      <a href="#associations">Associations</a>
+      <a href="#samples">Samples</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</section>
+
+<section id="sample-sites" class="section"><div class="wrap">
+  <h2>Sample sites</h2>
+  <p class="muted">Body sites from which samples were taken. [Placeholder: list to be filled.]</p>
+</div></section>
+
+<section id="taxa" class="section alt"><div class="wrap">
+  <h2>Taxa</h2>
+  <p class="muted">Species-level taxa from MetaPhlAn profiles, with prevalence across projects. [Placeholder: table to be filled.]</p>
+</div></section>
+
+<section id="phenotypes" class="section"><div class="wrap">
+  <h2>Phenotypes</h2>
+  <p class="muted">Clinical and demographic phenotypes harmonised across projects. [Placeholder.]</p>
+</div></section>
+
+<section id="associations" class="section alt"><div class="wrap">
+  <h2>Associations</h2>
+  <p class="muted">Taxon–phenotype associations from case-control comparisons. [Placeholder.]</p>
+</div></section>
+
+<section id="samples" class="section"><div class="wrap">
+  <h2>Samples</h2>
+  <p class="muted">Sample-level metadata with a link to each sample's profile. [Placeholder.]</p>
+</div></section>
+
+<section id="projects" class="section alt"><div class="wrap">
+  <h2>Projects</h2>
+  <p>Each project is a self-contained study with its own samples, metadata and reference. The framework is:</p>
+  <ul class="framework">
+    <li><strong>Project ID</strong>, a short unique code, e.g. <code>RAVEL2011</code></li>
+    <li><strong>Reference</strong>, DOI and citation</li>
+    <li><strong>Cohort</strong>, population, number of participants, inclusion criteria</li>
+    <li><strong>Sampling</strong>, sample site, collection method and storage</li>
+    <li><strong>Sequencing and profiling</strong>, platform, MetaPhlAn version and database</li>
+    <li><strong>Phenotypes</strong>, clinical variables with definitions</li>
+    <li><strong>Ethics and access</strong>, approval reference and data-sharing terms</li>
+  </ul>
+  <div class="grid-2">
+    <article class="card project">
+      <h3>RAVEL2011 · Example</h3>
+      <p class="muted">Ravel et al. 2011. Vaginal swabs from 396 asymptomatic North American women across four self-reported ethnic groups; 16S rRNA pyrosequencing.</p>
+      <p><span class="pill">396 samples</span> <span class="pill">Ethnic group</span> <span class="pill">Vaginal pH</span> <span class="pill">Nugent score</span></p>
+      <p><a href="statistics.html">View statistics</a> · <a href="download.html">Download</a></p>
+    </article>
+    <article class="card project placeholder">
+      <h3>[Next project]</h3>
+      <p class="muted">Placeholder card. Add project details here when data is available.</p>
+    </article>
+  </div>
+</div></section>
+
+<section id="publications" class="section"><div class="wrap">
+  <h2>Publications</h2>
+  <p class="muted">Papers that report vaginal microbiome data included in the database. [Placeholder list.]</p>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VagMicroDb (working name) · Vaginal microbiome research database · Juan Lab, Karolinska Institutet</p>
+    <p class="small">Example project: Ravel J et al. Vaginal microbiome of reproductive-age women. <cite>PNAS</cite> 2011;108 Suppl 1:4680–4687. doi:10.1073/pnas.1002611107</p>
+  </div>
+</footer>
+<script src="upload.js"></script>
+</body>
+</html>

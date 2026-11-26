@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help | VagMicroDb</title>
+  <meta name="description" content="VagMicroDb: a database of vaginal microbiome research (working name).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">VagMicroDb <span class="badge">working name</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="browse.html" >Browse</a></li>
+        <li><a href="analysis.html" >Analysis</a></li>
+        <li><a href="statistics.html" >Statistics</a></li>
+        <li><a href="download.html" >Download</a></li>
+        <li><a href="help.html" aria-current="page">Help</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="section page-head">
+  <div class="wrap">
+    <h1>Help</h1>
+    <p class="lead">Answers to common questions about using the database.</p>
+  </div>
+</section>
+
+<section id="faq" class="section"><div class="wrap">
+  <h2>Frequently asked questions</h2>
+  <details class="faq"><summary>What is a MetaPhlAn table?</summary>
+    <p>The merged output of MetaPhlAn, the taxonomic profiler, with one row per clade and one column per sample. Abundances are relative (percent).</p></details>
+  <details class="faq"><summary>How do I create one?</summary>
+    <p>Run MetaPhlAn on each sample, then combine them with <code>merge_metaphlan_tables.py</code>. See the <a href="https://github.com/biobakery/MetaPhlAn">MetaPhlAn documentation</a>.</p></details>
+  <details class="faq"><summary>Is my uploaded file stored?</summary>
+    <p>[Placeholder: state the storage policy once server-side upload is in place. At present the file is checked in your browser only.]</p></details>
+  <details class="faq"><summary>How do I cite the database?</summary>
+    <p>See the <a href="index.html#citation">Citation</a> section on the Home page.</p></details>
+</div></section>
+
+<section id="contact-help" class="section alt"><div class="wrap">
+  <h2>Contact us</h2>
+  <p>[Contact email: to be added.] See also the <a href="index.html#contact">Contact</a> section on the Home page.</p>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VagMicroDb (working name) · Vaginal microbiome research database · Juan Lab, Karolinska Institutet</p>
+    <p class="small">Example project: Ravel J et al. Vaginal microbiome of reproductive-age women. <cite>PNAS</cite> 2011;108 Suppl 1:4680–4687. doi:10.1073/pnas.1002611107</p>
+  </div>
+</footer>
+<script src="upload.js"></script>
+</body>
+</html>
